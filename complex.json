@@ -1,0 +1,151 @@
+{
+	"title": "Kvorak quirks",
+	"rules": [
+		{"description": "Alt + U = backspace",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "modifiers": {
+					  "mandatory": ["left_alt"]
+				  },
+				  "key_code": "u"
+			  },
+			  "to": [
+				  {
+					  "key_code": "delete_or_backspace"
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Alt + O = delete",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "modifiers": {
+					  "mandatory": ["left_alt"]
+				  },
+				  "key_code": "o"
+			  },
+			  "to": [
+				  {
+					  "key_code": "delete_forward"
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Alt + H = enter",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "modifiers": {
+					  "mandatory": ["left_alt"]
+				  },
+				  "key_code": "h"
+			  },
+			  "to": [
+				  {
+					  "key_code": "return_or_enter"
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Alt + Ctrl + I = alt-tab",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "modifiers": {
+					  "mandatory": ["left_alt", "left_control"]
+				  },
+				  "key_code": "i"
+			  },
+			  "to": [
+				  {
+					  "key_code": "tab",
+					  "modifiers" : ["left_alt"]
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Alt + I = tab",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "modifiers": {
+					  "mandatory": ["left_alt"]
+				  },
+				  "key_code": "i"
+			  },
+			  "to": [
+				  {
+					  "key_code": "tab"
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Left shift key + left_alt + right_shift mod is asterisk",
+		 "manipulators":[
+			 {"type": "basic",
+			  "from": {
+				  "key_code": "left_shift",
+				  "modifiers" : {"mandatory": ["left_alt", "right_shift"] }
+			  },
+			  "to": [
+				  {
+					  "key_code": "grave_accent_and_tilde",
+					  "modifiers" : ["left_alt", "left_shift"]
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Left shift key + left_alt is pipe",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "key_code": "left_shift",
+				  "modifiers" : {"mandatory": ["left_alt"] }
+			  },
+			  "to": [
+				  {
+					  "key_code": "grave_accent_and_tilde",
+					  "modifiers" : ["left_alt"]
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Left shift key + right_shift mod is underscore",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "key_code": "left_shift",
+				  "modifiers" : {"mandatory": ["right_shift"] }
+			  },
+			  "to": [
+				  {
+					  "key_code": "grave_accent_and_tilde",
+					  "modifiers" : ["right_shift"]
+				  }
+			  ]
+			 }
+		 ]
+		},
+		{"description": "Left shift is hyphen",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "key_code": "left_shift"
+			  },
+			  "to": [
+				  {"key_code": "grave_accent_and_tilde"}
+			  ]
+			 }
+		 ]
+		}
+	]
+}
