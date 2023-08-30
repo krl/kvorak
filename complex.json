@@ -145,6 +145,21 @@
 			  ]
 			 }
 		 ]
+		},
+		{"description": "Ctrl-K is F4",
+		 "manipulators": [
+			 {"type": "basic",
+			  "from": {
+				  "key_code": "k",
+				  "modifiers" : {
+					  "mandatory": ["left_control"]
+				  }
+			  },
+			  "to": [
+				  {"key_code": "f4"}
+			  ]
+			 }
+		 ]
 		}
 	]
 }
